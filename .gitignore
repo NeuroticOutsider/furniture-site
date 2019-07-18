@@ -1,11 +1,7 @@
 node_modules
-fonts
-img
-js
 libs
 sass
 non_optimized_images
-index.html
 gulpfile.js
 package-lock.json
 package.json
