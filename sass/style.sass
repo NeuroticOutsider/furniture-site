@@ -1,0 +1,111 @@
+@import "libs"
+@import "vars"
+@import "mixins"
+@import "fonts"
+@import "grid"
+
+* 
+	box-sizing: border-box
+
+body
+	font-family: $defaultfont
+	font-size: 15px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	overflow-x: hidden
+	opacity: 1
+
+h1, h2, h3, h4, h5, h6
+	text-transform: uppercase
+	line-height: 1.4
+
+img
+  max-width: 100%
+  height: auto
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+a
+  text-decoration: none
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: rgba (0, 0, 0, .25)
+	border-color: rgba (0, 0, 0, .25)
+
+html, body
+	height: 100%
+
+header, footer, section
+	position: relative
+	background-size: cover
+	background-position: center
+
+section
+	background-color: #ffffff
+	color: $dark
+	text-align: center
+	padding: 5% 0
+	position: relative
+	h3
+		font-weight: 700
+		font-size: 30px
+	h4
+		font-family: 'Kaushan Script', cursive
+		font-size: 24px
+	p
+		font-family: 'Roboto', sans-serif
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 16px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	&:after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&:after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+			display: flex
+			display: block
+.h123
+	color: red
+.logo12
+	width: 100px
+	fill: blue
+.logo-11
+	width: 200px
+	fill: red
