@@ -8,12 +8,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<meta property="og:image" content="path/to/image.jpg">
-		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
 		<!-- Chrome, Firefox OS and Opera -->
 		<meta name="theme-color" content="#ffffff">
 		<!-- Windows Phone -->
@@ -34,10 +28,24 @@
 		
     <header class="header">
 
+			<div class="menu menu--active">
+				<div class="container">
+					<nav class="menu__nav">
+						<a href="#" class="menu__link">Главная</a>
+						<a href="#" class="menu__link">Продукция</a>
+						<a href="#" class="menu__link">Каталог</a>
+						<a href="#" class="menu__link">Примеры работ</a>
+						<a href="#" class="menu__link">Примерка изображений</a>
+						<a href="#" class="menu__link">Стоимость дилерам</a>
+						<a href="#" class="menu__link">О скинали</a>
+					</nav>
+				</div>
+			</div>
+
 			<div class="navbar">
 				<div class="container">
 					<div class="navbar__wrap">
-						<button class="menu-button">
+						<button class="menu-button navbar__menu-button">
 							<span class="menu-button__line"></span>
 							<span class="menu-button__line"></span>
 							<span class="menu-button__line"></span>
@@ -59,7 +67,13 @@
 				</div>
 			</div>
 
-			<div class="hero"></div>
+			<div class="hero" style="background-image: url('img/main-bg.jpg')">
+				<div class="container">
+					<h1 class="hero__title">Гарантия минимальной цены на скинали</h1>
+					<span class="hero__subtitle">от 3 000 р/м2</span>
+					<button class="hero__button button">Заказать скинали</button>
+				</div>
+			</div>
 			
 		</header>
 
