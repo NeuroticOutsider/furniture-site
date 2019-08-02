@@ -6010,7 +6010,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   box-sizing: border-box; }
 
 body {
-  min-width: 320px;
+  min-width: 380px;
   position: relative;
   overflow-x: hidden;
   opacity: 1;
@@ -6046,11 +6046,43 @@ header, footer, section {
   display: inline-block;
   border: none;
   text-decoration: none;
-  padding: 20px;
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  outline: none; }
+  outline: none;
+  background-color: #507fe1;
+  padding: 25px 45px;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'novabold', sans-serif; }
+
+.bg-color {
+  background-color: #f1f1f1; }
+
+.input {
+  height: 80px;
+  padding-left: 30px;
+  border: 1px solid #dddddd; }
+
+.checkbox {
+  display: none; }
+  .checkbox:checked + label:before {
+    background-color: green; }
+  .checkbox-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 40px;
+    cursor: pointer; }
+    .checkbox-label:before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      border: 1px solid #dddddd;
+      margin-right: 20px; }
 
 .navbar {
   position: fixed;
@@ -6195,18 +6227,87 @@ header, footer, section {
     font-family: 'novabold', sans-serif;
     margin-bottom: 65px;
     display: block; }
-  .hero__button {
-    background-color: #507fe1;
-    color: #ffffff;
-    font-size: 15px;
-    padding: 25px 45px;
-    font-family: 'novabold', sans-serif; }
 
 @media (max-width: 991px) {
   .hero {
     background-size: 100%;
-    background-position: top right; } }
+    background-position: top right;
+    padding-bottom: 200px; } }
 
 @media (max-width: 576px) {
   .hero {
     margin-top: 60px; } }
+
+.offer {
+  padding: 130px 0; }
+  .offer__block {
+    background: #fff url("../img/offer-bg.jpg") no-repeat center right;
+    background-size: contain;
+    padding: 80px;
+    margin-top: -200px;
+    -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1); }
+  .offer__title {
+    font-size: 25px;
+    font-family: 'novabold', sans-serif;
+    margin: 0;
+    margin-bottom: 30px; }
+  .offer__subtitle {
+    font-size: 21px;
+    display: block;
+    margin-bottom: 45px; }
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 900px;
+  margin-bottom: 25px; }
+  .form__row:last-child {
+    margin-bottom: 0; }
+
+.form__label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 15px; }
+
+.form__group {
+  -ms-flex-preferred-size: 33.33%;
+  flex-basis: 33.33%; }
+  .form__group:last-child .input {
+    border-right-width: 1px; }
+
+.form__input {
+  width: 100%;
+  border-right-width: 0px; }
+
+.form__button {
+  height: 80px;
+  width: 100%; }
+
+@media (max-width: 1199px) {
+  .offer-block {
+    background-position: center right -120px; } }
+
+@media (max-width: 991px) {
+  .offer-block {
+    background-image: none;
+    padding: 40px; }
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .form__row-checkbox {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+  .form__input {
+    border-right-width: 1px;
+    margin-bottom: 25px; }
+  .form__group {
+    width: 100%; } }
