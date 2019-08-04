@@ -6064,6 +6064,22 @@ header, footer, section {
   color: #fff;
   font-size: 15px;
   font-family: 'novabold', sans-serif; }
+  .button-fitting, .button-add {
+    color: #507fe1;
+    padding: 10px;
+    background-color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-size: 11px;
+    height: 30px; }
+  .button-add {
+    background-color: #7c9fe8;
+    color: #fff; }
+  .button-like {
+    background-color: #507fe1;
+    height: 30px;
+    width: 30px;
+    border: none; }
 
 .bg-color {
   background-color: #f1f1f1; }
@@ -6357,3 +6373,57 @@ header, footer, section {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-bottom: 50px; } }
+
+.catalog__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.catalog-card {
+  max-width: 570px;
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+  box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1); }
+  .catalog-card__buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .catalog-card__tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(80, 127, 225, 0.6); }
+  .catalog-card__image {
+    display: block; }
+
+.catalog__link {
+  text-align: center;
+  margin-top: 30px; }
+  .catalog__link-button {
+    margin-bottom: 25px; }
+
+.catalog__description {
+  display: block; }
+
+@media (max-width: 1199px) {
+  .catalog-card {
+    max-width: 470px; } }
+
+@media (max-width: 991px) {
+  .catalog__block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
